@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #4CAF50;
+    color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+    position: relative;
+}
+
+#profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 3rem;
+    transform: translateY(50%);
+    opacity: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s ease, opacity 0.5s ease, text-shadow 0.5s ease;
+}
+
+header:hover h1 {
+    transform: translateY(0);
+    opacity: 1;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+header p {
+    font-size: 1.5rem;
+}
+
+section {
+    padding: 40px 0;
+}
+
+#about, #projects, #contact {
+    background-color: #FFD6E5;
+}
+
+.project {
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    background-color: #4CAF50;
+    color: #ffffff;
+    padding: 10px;
+    margin: 0;
+}
+
+.project p {
+    font-size: 1rem;
+    padding: 10px;
+}
+
+/* Contact Me Section */
+#contact {
+    background-color: #FF9AA2;
+}
+
+#contact h2 {
+    color: #ffffff;
+}
+
+/* Color Theme */
+button, a {
+    background-color: #4CAF50;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover, a:hover {
+    background-color: #45a049;
+}
+
+/* Profile Picture */
+#profile-pic {
+    border: 4px solid #ffffff;
+    transition: border-color 0.3s ease;
+}
+
+#profile-pic:hover {
+    border-color: #45a049;
+}
+</style>
+<body>
+    <header>
+        <div class="container">
+            <img src="profile.jpg" alt="Maahi Joshi" id="profile-pic">
+            <h1 id="name">Maahi Joshi</h1>
+            <p>Web Developer</p>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p id="about-text">I am a passionate web developer with experience in HTML, CSS, and JavaScript. I enjoy creating beautiful and functional websites.</p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Description of Project 1</p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Description of Project 2</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Email: maahi@example.com</p>
+            <p>Phone: 123-456-7890</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
